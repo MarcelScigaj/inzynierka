@@ -157,8 +157,6 @@ CREATE TABLE `personal_access_tokens` (
 -- Dumping data for table `personal_access_tokens`
 --
 
-INSERT INTO `personal_access_tokens` (`id`, `tokenable_type`, `tokenable_id`, `name`, `token`, `abilities`, `last_used_at`, `created_at`, `updated_at`, `expires_at`) VALUES
-(1, 'App\\Models\\User', 2, 'authToken', 'bbd620bbdb0d192820bec005ce94d7944de94ceb7ef45c46167b1639833ce082', '[\"*\"]', '2024-02-08 18:50:49', '2024-02-08 18:42:00', '2024-02-08 18:50:49', NULL);
 
 -- --------------------------------------------------------
 
