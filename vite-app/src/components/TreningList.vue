@@ -200,9 +200,9 @@ export default {
 
 
 mozeEdytowac(trening) {
-  const userRole = localStorage.getItem('userRole');
+  const userRole = JSON.parse(localStorage.getItem('userRole')); 
   const userData = JSON.parse(localStorage.getItem('userData'));
-  return userRole === 'ADMIN' || trening.uzytkownik_id === userData.id;
+  return userRole.includes('Admin') || (userRole.includes('Trener') && trening.uzytkownik_id === userData.id);
 },
 
     async fetchGrupyTreningowe() {
